@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>calculator</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript">
+		function displaynum(n1)
+		{
+			calform.txt1.value=calform.txt1.value+n1;
+		}
+	</script>
+</head>
+<body>
+<div class="bdr">
+	<div class="btw">
+		<form name="calform">
+		<input type="text" name="txt1" style="text-align: right;"><br>
+		<input type="button" name="buttom7" value="7" onclick="displaynum(buttom7.value)">
+		<input type="button" name="buttom8" value="8" onclick="displaynum(buttom8.value)">
+		<input type="button" name="buttom9" value="9" onclick="displaynum(buttom7.value)">
+		<input type="button" name="addition" value="+" onclick="displaynum(addition.value)"><br>
+		<input type="button" name="buttom4" value="4" onclick="displaynum(buttom4.value)">
+		<input type="button" name="buttom5" value="5" onclick="displaynum(buttom5.value)">
+		<input type="button" name="buttom6" value="6" onclick="displaynum(buttom6.value)">
+		<input type="button" name="substraction" value="-" onclick="displaynum(substraction.value)"><br>
+		<input type="button" name="buttom1" value="1" onclick="displaynum(buttom1.value)">
+		<input type="button" name="buttom2" value="2" onclick="displaynum(buttom2.value)">
+		<input type="button" name="buttom3" value="3" onclick="displaynum(buttom3.value)">
+		<input type="button" name="multiplacation" value="*" onclick="displaynum(multiplacation.value)"><br>
+		<input type="button" name="buttom0" value="0" onclick="displaynum(buttom0.value)">
+		<input type="button" name="point" value="." onclick="displaynum(point.value)">
+		<input type="button" name="equall" value="=" onclick="txt1.value=eval(txt1.value)">
+		<input type="button" name="division" value="/" onclick="displaynum(division.value)">
+		</form>
+	</div>
+</div>
+</body>
+</html>

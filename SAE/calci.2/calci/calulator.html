@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>calculator</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript">
+		function calcul()
+		{
+			var n1=parseFloat(document.getElementById('n1').value);
+			var n2=parseFloat(document.getElementById('n2').value);
+			var opr=document.getElementById('operators').value;
+			if (opr==='+')
+			{
+				document.getElementById('result').value=n1+n2;
+			}
+
+			if (opr==='-')
+			{
+				document.getElementById('result').value=n1-n2;
+			}
+			if (opr==='*')
+			{
+				document.getElementById('result').value=n1*n2;
+			}
+			if (opr==='/')
+			{
+				document.getElementById('result').value=n1/n2;
+			}
+		}
+
+	</script>
+</head>
+<body>
+	<div id="boundry">
+		<h1>Calculator</h1>
+	</div>
+	<div class="nav">
+		<div class="calc">
+			<input type="text" id="n1" placeholder="Enter 1st No"/>
+		</div>
+		<div class="calc">
+			<input type="text" id="n2" placeholder="Enter 2nd No"/>
+		</div>
+		<div class="calc">
+			<select id="operators">
+			<option value="+">+</option>
+			<option value="-">-</option>
+			<option value="*">*</option>
+			<option value="/">/</option>
+			</select>
+		</div>
+		<button onclick="calcul();">=</button>
+		<input type="text" id="result" placeholder="result" class="Btn" />
+	</div>
+</body>
+</html> 

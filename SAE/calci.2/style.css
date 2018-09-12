@@ -1,0 +1,12 @@
+
+.btw{
+	text-align: center;
+	border: 2px solid gray;
+	width: 200px;
+	height: 150px;
+	background-color: purple;
+	margin-top: 100px;
+	margin-left: 350px;
+	border-radius: 10px;
+	padding-top: 20px;
+}
